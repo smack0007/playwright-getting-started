@@ -1,0 +1,20 @@
+{
+  "name": "playwright-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server . -p 8080",
+    "ui-test": "playwright test",
+    "ui-test:chromium": "npm run ui-test -- --project=chromium",
+    "ui-test:firefox": "npm run ui-test -- --project=firefox",
+    "ui-test:webkit": "npm run ui-test -- --project=webkit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.35.0",
+    "http-server": "^14.1.1"
+  }
+}
